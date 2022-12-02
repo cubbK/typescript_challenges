@@ -24,7 +24,7 @@
 // type Todo = DeepReadonly<X> // should be same as `Expected`
 // ```
 
-import type { Equal, Expect, Debug } from "./utils";
+import type { Equal, Expect } from "./utils";
 
 type DeepReadonly<Obj> = {
   readonly [Key in keyof Obj]: Obj[Key] extends Function
